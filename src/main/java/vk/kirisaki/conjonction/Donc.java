@@ -15,7 +15,7 @@ public final class Donc extends Conjonction {
     public StatutAffirmation evaluer(StatutAffirmation statutAffirmation1, StatutAffirmation statutAffirmation2) {
         if (statutAffirmation1.equals(VERITE) && statutAffirmation2.equals(MENSONGE)) {
             return MENSONGE;
-        } else if (statutAffirmation1.equals(AFFIRMATION) ||  statutAffirmation2.equals(AFFIRMATION)) {
+        } else if (statutAffirmation1.equals(VERITE) &&  statutAffirmation2.equals(AFFIRMATION)) {
             return AFFIRMATION;
         }
         return VERITE;

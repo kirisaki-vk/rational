@@ -18,7 +18,7 @@ public final class Et extends Conjonction {
         boolean affirmation2Vrai = statutAffirmation2.equals(VERITE);
         if (affirmation1Vrai && affirmation2Vrai) {
             return VERITE;
-        } else if (statutAffirmation1.equals(AFFIRMATION) || statutAffirmation2.equals(AFFIRMATION)) {
+        } else if (statutAffirmation1.equals(AFFIRMATION) && statutAffirmation2.equals(AFFIRMATION)) {
             return AFFIRMATION;
         }
         return MENSONGE;
